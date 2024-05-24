@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hover-icon-thiel--end:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(66%) saturate(337%) hue-rotate(135deg) brightness(85%) contrast(78%);
+}
+
+.chevron::after {
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.5em;
+    left: 0.6em;
+    position: relative;
+    top: 0.1em;
+    transform: rotate(-45deg);
+    vertical-align: middle;
+    width: 0.5em;
+}
+
+
+.chevron.bottom.active::after {
+    color: #F91F5F;
+
+}
+.chevron.active::after {
+    color: #F91F5F;
+}
+
+
+
+.chevron.bottom:after {
+    top: -0.1em;
+    transform: rotate(135deg);
+}
